@@ -1,6 +1,5 @@
 /**
  * @description M3U8 to MP4 Converter
- * @author Furkan Inanc
  * @version 1.0.0
  */
 
@@ -52,6 +51,9 @@ class m3u8ToMp4Converter {
         })
         .on("end", () => {
           resolve();
+        })
+        .on('progress', function(progress) {
+          log('progress: ' + (progress.percent || 0).toFixed(2) + '%。');
         })
         .outputOptions("-c copy")
         .outputOptions("-bsf:a aac_adtstoasc")
