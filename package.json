@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/furkaninanc/m3u8-to-mp4.git"
+    "url": "git+https://github.com/jsoner-wong/m3u8-to-mp4.git"
   },
   "keywords": [
     "m3u8",
@@ -19,11 +19,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/jsoner-wong/m3u8-to-mp4/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/jsoner-wong/m3u8-to-mp4",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.2",
-    "fs": "0.0.1-security"
+    "fs": "^0.0.1-security",
+    "single-line-log": "^1.1.2"
   }
 }

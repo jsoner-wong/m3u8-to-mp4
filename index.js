@@ -5,6 +5,7 @@
  */
 
 let ffmpeg = require("fluent-ffmpeg");
+let log = require('single-line-log').stdout;
 
 /**
  * A class to convert M3U8 to MP4
