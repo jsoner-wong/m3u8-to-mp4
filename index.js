@@ -38,7 +38,7 @@ class m3u8ToMp4Converter {
   /**
    * Starts the process
    */
-  start() {
+  start(tips) {
     return new Promise((resolve, reject) => {
       if (!this.M3U8_FILE || !this.OUTPUT_FILE) {
         reject(new Error("You must specify the input and the output files"));
@@ -53,7 +53,7 @@ class m3u8ToMp4Converter {
           resolve();
         })
         .on('progress', function(progress) {
-          log('progress: ' + (progress.percent || 0).toFixed(2) + '%。');
+          log((tips || 'progress: ') + (progress.percent || 0).toFixed(2) + '%。');
         })
         .outputOptions("-c copy")
         .outputOptions("-bsf:a aac_adtstoasc")
