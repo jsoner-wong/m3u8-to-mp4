@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This module helps you convert an M3U8 file to an MP4 file easily using ffmpeg/node.js",
   "main": "index.js",
   "scripts": {
